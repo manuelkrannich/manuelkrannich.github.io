@@ -29,6 +29,7 @@
     src: url('./fonts/LinBiolinum_R.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -36,6 +37,7 @@
     src: url('./fonts/LinBiolinum_RI.woff') format('woff');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -43,15 +45,17 @@
     src: url('./fonts/LinBiolinum_RB.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
-@font-face {
-    font-family: 'Linux Libertine'; /* bold */
-    src: url('./fonts/LinBiolinum_RBI.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
+/* bold-italic block removed: LinBiolinum_RBI.woff doesn't exist (404) */
+
+body {
+    font-family: 'Linux Libertine', 'Helvetica Neue', Arial, sans-serif;
+    min-width: 752px;
+    text-align: center;
 }
-body {font-family: 'Linux Libertine'; min-width: 752px; text-align: center;}
+
 #wrapper {width:752px; margin:0 auto; text-align:justify;}
 
 a {text-decoration: none; color: DimGray;}
@@ -75,7 +79,7 @@ td {
    padding:0; margin:0;
 }
 
-table { 
+table {
 border-spacing: 0;
 }
 
@@ -108,7 +112,6 @@ br.smallmargin {
             content: ""; /* clears default height */
             margin-top: 0.9em; /* change this to whatever height you want it */
 }
-
 </style>
 
 <meta name="google-site-verification" content="C2TUpGIRP4QzkpdJ7abFKUrpaAaK7d-toG6H_mI3tFc" />
